@@ -8,20 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		DA525E4520E6A52300E7A043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA525E4420E6A52300E7A043 /* AppDelegate.swift */; };
-		DA525E4720E6A52300E7A043 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA525E4620E6A52300E7A043 /* ViewController.swift */; };
-		DA525E4A20E6A52300E7A043 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA525E4820E6A52300E7A043 /* Main.storyboard */; };
+		DA525E4720E6A52300E7A043 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA525E4620E6A52300E7A043 /* ListViewController.swift */; };
 		DA525E4C20E6A52500E7A043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA525E4B20E6A52500E7A043 /* Assets.xcassets */; };
 		DA525E4F20E6A52500E7A043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA525E4D20E6A52500E7A043 /* LaunchScreen.storyboard */; };
+		DA525E5720E6A6F000E7A043 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA525E5620E6A6F000E7A043 /* ListCell.swift */; };
+		DA525E5920E6A7D300E7A043 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = DA525E5820E6A7D300E7A043 /* Cartfile */; };
+		DA525E5B20E6A8AA00E7A043 /* UIEdgeInset+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA525E5A20E6A8AA00E7A043 /* UIEdgeInset+.swift */; };
+		DA525E5E20E6A90A00E7A043 /* ActionClosurable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA525E5D20E6A90A00E7A043 /* ActionClosurable.framework */; };
+		DA525E6020E6A90C00E7A043 /* Hero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA525E5F20E6A90C00E7A043 /* Hero.framework */; };
+		DA525E6220E6A90E00E7A043 /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA525E6120E6A90E00E7A043 /* PureLayout.framework */; };
+		DA525E6420E6A91000E7A043 /* SwiftExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA525E6320E6A91000E7A043 /* SwiftExtensions.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA525E4120E6A52300E7A043 /* AnimationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA525E4420E6A52300E7A043 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DA525E4620E6A52300E7A043 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DA525E4920E6A52300E7A043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DA525E4620E6A52300E7A043 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		DA525E4B20E6A52500E7A043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA525E4E20E6A52500E7A043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA525E5020E6A52500E7A043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA525E5620E6A6F000E7A043 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		DA525E5820E6A7D300E7A043 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
+		DA525E5A20E6A8AA00E7A043 /* UIEdgeInset+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIEdgeInset+.swift"; sourceTree = "<group>"; };
+		DA525E5D20E6A90A00E7A043 /* ActionClosurable.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ActionClosurable.framework; path = Carthage/Build/iOS/ActionClosurable.framework; sourceTree = "<group>"; };
+		DA525E5F20E6A90C00E7A043 /* Hero.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hero.framework; path = Carthage/Build/iOS/Hero.framework; sourceTree = "<group>"; };
+		DA525E6120E6A90E00E7A043 /* PureLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PureLayout.framework; path = Carthage/Build/iOS/PureLayout.framework; sourceTree = "<group>"; };
+		DA525E6320E6A91000E7A043 /* SwiftExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftExtensions.framework; path = Carthage/Build/iOS/SwiftExtensions.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA525E6020E6A90C00E7A043 /* Hero.framework in Frameworks */,
+				DA525E6220E6A90E00E7A043 /* PureLayout.framework in Frameworks */,
+				DA525E6420E6A91000E7A043 /* SwiftExtensions.framework in Frameworks */,
+				DA525E5E20E6A90A00E7A043 /* ActionClosurable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +56,7 @@
 			children = (
 				DA525E4320E6A52300E7A043 /* AnimationSample */,
 				DA525E4220E6A52300E7A043 /* Products */,
+				DA525E5C20E6A90A00E7A043 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +71,27 @@
 		DA525E4320E6A52300E7A043 /* AnimationSample */ = {
 			isa = PBXGroup;
 			children = (
+				DA525E5820E6A7D300E7A043 /* Cartfile */,
 				DA525E4420E6A52300E7A043 /* AppDelegate.swift */,
-				DA525E4620E6A52300E7A043 /* ViewController.swift */,
-				DA525E4820E6A52300E7A043 /* Main.storyboard */,
+				DA525E4620E6A52300E7A043 /* ListViewController.swift */,
+				DA525E5620E6A6F000E7A043 /* ListCell.swift */,
+				DA525E5A20E6A8AA00E7A043 /* UIEdgeInset+.swift */,
 				DA525E4B20E6A52500E7A043 /* Assets.xcassets */,
 				DA525E4D20E6A52500E7A043 /* LaunchScreen.storyboard */,
 				DA525E5020E6A52500E7A043 /* Info.plist */,
 			);
 			path = AnimationSample;
+			sourceTree = "<group>";
+		};
+		DA525E5C20E6A90A00E7A043 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA525E6320E6A91000E7A043 /* SwiftExtensions.framework */,
+				DA525E6120E6A90E00E7A043 /* PureLayout.framework */,
+				DA525E5F20E6A90C00E7A043 /* Hero.framework */,
+				DA525E5D20E6A90A00E7A043 /* ActionClosurable.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +104,7 @@
 				DA525E3D20E6A52300E7A043 /* Sources */,
 				DA525E3E20E6A52300E7A043 /* Frameworks */,
 				DA525E3F20E6A52300E7A043 /* Resources */,
+				DA525E6520E6A91D00E7A043 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -122,20 +153,47 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA525E5920E6A7D300E7A043 /* Cartfile in Resources */,
 				DA525E4F20E6A52500E7A043 /* LaunchScreen.storyboard in Resources */,
 				DA525E4C20E6A52500E7A043 /* Assets.xcassets in Resources */,
-				DA525E4A20E6A52300E7A043 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DA525E6520E6A91D00E7A043 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ActionClosurable.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftExtensions.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/PureLayout.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Hero.framework",
+			);
+			name = Carthage;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DA525E3D20E6A52300E7A043 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA525E4720E6A52300E7A043 /* ViewController.swift in Sources */,
+				DA525E5720E6A6F000E7A043 /* ListCell.swift in Sources */,
+				DA525E4720E6A52300E7A043 /* ListViewController.swift in Sources */,
+				DA525E5B20E6A8AA00E7A043 /* UIEdgeInset+.swift in Sources */,
 				DA525E4520E6A52300E7A043 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +201,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DA525E4820E6A52300E7A043 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA525E4920E6A52300E7A043 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DA525E4D20E6A52500E7A043 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -281,6 +331,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AnimationSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,6 +352,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AnimationSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

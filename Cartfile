@@ -1,0 +1,11 @@
+# https://github.com/tattn/SwiftExtensions
+github "tattn/SwiftExtensions"
+
+# https://github.com/takasek/ActionClosurable
+github "takasek/ActionClosurable"
+
+# https://github.com/PureLayout/PureLayout
+github "PureLayout/PureLayout"
+
+# https://github.com/HeroTransitions/Hero
+github "HeroTransitions/Hero"

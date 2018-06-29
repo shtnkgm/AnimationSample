@@ -1,0 +1,4 @@
+github "HeroTransitions/Hero" "1.2.0"
+github "PureLayout/PureLayout" "v3.0.2"
+github "takasek/ActionClosurable" "1.2.0"
+github "tattn/SwiftExtensions" "1.0.2"
