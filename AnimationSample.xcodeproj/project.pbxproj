@@ -18,6 +18,7 @@
 		DA525E6020E6A90C00E7A043 /* Hero.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA525E5F20E6A90C00E7A043 /* Hero.framework */; };
 		DA525E6220E6A90E00E7A043 /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA525E6120E6A90E00E7A043 /* PureLayout.framework */; };
 		DA525E6420E6A91000E7A043 /* SwiftExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA525E6320E6A91000E7A043 /* SwiftExtensions.framework */; };
+		DA525E6920E6AC2000E7A043 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA525E6820E6AC2000E7A043 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		DA525E5F20E6A90C00E7A043 /* Hero.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Hero.framework; path = Carthage/Build/iOS/Hero.framework; sourceTree = "<group>"; };
 		DA525E6120E6A90E00E7A043 /* PureLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PureLayout.framework; path = Carthage/Build/iOS/PureLayout.framework; sourceTree = "<group>"; };
 		DA525E6320E6A91000E7A043 /* SwiftExtensions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftExtensions.framework; path = Carthage/Build/iOS/SwiftExtensions.framework; sourceTree = "<group>"; };
+		DA525E6820E6AC2000E7A043 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				DA525E4420E6A52300E7A043 /* AppDelegate.swift */,
 				DA525E4620E6A52300E7A043 /* ListViewController.swift */,
 				DA525E5620E6A6F000E7A043 /* ListCell.swift */,
+				DA525E6820E6AC2000E7A043 /* DetailViewController.swift */,
 				DA525E5A20E6A8AA00E7A043 /* UIEdgeInset+.swift */,
 				DA525E4B20E6A52500E7A043 /* Assets.xcassets */,
 				DA525E4D20E6A52500E7A043 /* LaunchScreen.storyboard */,
@@ -193,6 +196,7 @@
 			files = (
 				DA525E5720E6A6F000E7A043 /* ListCell.swift in Sources */,
 				DA525E4720E6A52300E7A043 /* ListViewController.swift in Sources */,
+				DA525E6920E6AC2000E7A043 /* DetailViewController.swift in Sources */,
 				DA525E5B20E6A8AA00E7A043 /* UIEdgeInset+.swift in Sources */,
 				DA525E4520E6A52300E7A043 /* AppDelegate.swift in Sources */,
 			);

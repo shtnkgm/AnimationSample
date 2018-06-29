@@ -45,6 +45,8 @@ final class ListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor(white: 0.95, alpha: 1.0)
+        navigationItem.title = "一覧"
         view.addSubview(collectionView)
         collectionView.autoPinEdgesToSuperviewEdges()
     }
@@ -52,7 +54,8 @@ final class ListViewController: UIViewController {
 
 extension ListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        let detailViewController = DetailViewController(image: UIImage(named: "sample"))
+        navigationController?.pushViewController(detailViewController, animated: true)
     }
 }
 
@@ -63,7 +66,7 @@ extension ListViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(with: ListCell.self, for: indexPath)
-        cell.configure(image: nil)
+        cell.configure(image: UIImage(named: "sample"))
         return cell
     }
 }

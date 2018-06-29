@@ -18,7 +18,7 @@ final class ListCell: UICollectionViewCell {
         return imageView
     }()
     
-    public func configure(image: UIImage?) {
+    func configure(image: UIImage?) {
         imageView.image = image
         setup()
     }
