@@ -44,20 +44,30 @@ final class ListViewController: UIViewController {
         return layout
     }()
     
+    init() {
+        super.init(nibName: nil, bundle: nil)
+        hero.isEnabled = true
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(white: 0.95, alpha: 1.0)
         navigationItem.title = "List"
         view.addSubview(collectionView)
         collectionView.autoPinEdgesToSuperviewEdges()
-        
-        hero.isEnabled = true
+
+        // hero.modalAnimationType = .push(direction: .right)
     }
 }
 
 extension ListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let detailViewController = DetailViewController(image: UIImage(named: "sample"))
+        let detailViewController = DetailViewController(image: UIImage(named: "sample"),
+                                                        heroId: "item_\(indexPath.row)")
         navigationController?.pushViewController(detailViewController, animated: true)
         // present(detailViewController, animated: true, completion: nil)
     }
@@ -70,7 +80,8 @@ extension ListViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(with: ListCell.self, for: indexPath)
-        cell.configure(image: UIImage(named: "sample"))
+        cell.configure(image: UIImage(named: "sample"),
+                       heroId: "item_\(indexPath.row)")
         return cell
     }
 }

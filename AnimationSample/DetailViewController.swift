@@ -17,13 +17,15 @@ final class DetailViewController: UIViewController {
         imageView.isUserInteractionEnabled = false
         imageView.clipsToBounds = true
         imageView.backgroundColor = .white
-        imageView.hero.id = HeroId.image.rawValue
         return imageView
     }()
     
-    init(image: UIImage?) {
+    init(image: UIImage?, heroId: String) {
         super.init(nibName: nil, bundle: nil)
         imageView.image = image
+        imageView.hero.id = heroId
+        
+        hero.isEnabled = true
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -36,7 +38,5 @@ final class DetailViewController: UIViewController {
         navigationItem.title = "Detail"
         view.addSubview(imageView)
         imageView.autoPinEdgesToSuperviewEdges()
-        
-        hero.isEnabled = true
     }
 }

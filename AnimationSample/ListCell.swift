@@ -16,13 +16,13 @@ final class ListCell: UICollectionViewCell {
         imageView.isUserInteractionEnabled = false
         imageView.clipsToBounds = true
         imageView.backgroundColor = .white
-        imageView.hero.id = HeroId.image.rawValue
-        imageView.hero.modifiers = [.useNoSnapshot, .spring(stiffness: 250, damping: 25)]
+        // imageView.hero.modifiers = [.useNoSnapshot, .spring(stiffness: 250, damping: 25)]
         return imageView
     }()
     
-    func configure(image: UIImage?) {
+    func configure(image: UIImage?, heroId: String) {
         imageView.image = image
+        imageView.hero.id = heroId
         setup()
     }
     
