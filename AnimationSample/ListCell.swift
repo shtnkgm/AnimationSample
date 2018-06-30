@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Hero
 
 final class ListCell: UICollectionViewCell {
     private lazy var imageView: UIImageView = {
@@ -15,6 +16,8 @@ final class ListCell: UICollectionViewCell {
         imageView.isUserInteractionEnabled = false
         imageView.clipsToBounds = true
         imageView.backgroundColor = .white
+        imageView.hero.id = HeroId.image.rawValue
+        imageView.hero.modifiers = [.useNoSnapshot, .spring(stiffness: 250, damping: 25)]
         return imageView
     }()
     

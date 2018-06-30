@@ -8,7 +8,7 @@
 
 import UIKit
 import PureLayout
-import ActionClosurable
+import Hero
 
 final class DetailViewController: UIViewController {
     private lazy var imageView: UIImageView = {
@@ -17,6 +17,7 @@ final class DetailViewController: UIViewController {
         imageView.isUserInteractionEnabled = false
         imageView.clipsToBounds = true
         imageView.backgroundColor = .white
+        imageView.hero.id = HeroId.image.rawValue
         return imageView
     }()
     
@@ -32,7 +33,10 @@ final class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationItem.title = "Detail"
         view.addSubview(imageView)
         imageView.autoPinEdgesToSuperviewEdges()
+        
+        hero.isEnabled = true
     }
 }

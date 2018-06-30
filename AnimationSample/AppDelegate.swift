@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let listViewController = ListViewController()
         let navigationController = UINavigationController(rootViewController: listViewController)
+        navigationController.hero.isEnabled = true
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         return true

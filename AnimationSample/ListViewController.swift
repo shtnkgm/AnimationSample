@@ -9,6 +9,7 @@
 import UIKit
 import SwiftExtensions
 import PureLayout
+import Hero
 
 final class ListViewController: UIViewController {
 
@@ -46,9 +47,11 @@ final class ListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(white: 0.95, alpha: 1.0)
-        navigationItem.title = "一覧"
+        navigationItem.title = "List"
         view.addSubview(collectionView)
         collectionView.autoPinEdgesToSuperviewEdges()
+        
+        hero.isEnabled = true
     }
 }
 
@@ -56,6 +59,7 @@ extension ListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let detailViewController = DetailViewController(image: UIImage(named: "sample"))
         navigationController?.pushViewController(detailViewController, animated: true)
+        // present(detailViewController, animated: true, completion: nil)
     }
 }
 
