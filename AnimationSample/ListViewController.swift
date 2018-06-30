@@ -66,6 +66,7 @@ final class ListViewController: UIViewController {
 
 extension ListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        navigationController?.hero.navigationAnimationType = .fade
         let detailViewController = DetailViewController(image: UIImage(named: "sample"),
                                                         heroId: "item_\(indexPath.row)")
         navigationController?.pushViewController(detailViewController, animated: true)
