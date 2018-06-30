@@ -11,6 +11,15 @@ import PureLayout
 import Hero
 
 final class DetailViewController: UIViewController {
+    private lazy var stackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.distribution = .fill
+        stackView.alignment = .fill
+        stackView.spacing = 0
+        return stackView
+    }()
+    
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFit
@@ -20,11 +29,19 @@ final class DetailViewController: UIViewController {
         return imageView
     }()
     
-    init(image: UIImage?, heroId: String) {
+    private lazy var titleLabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.backgroundColor = .white
+        return label
+    }()
+    
+    init(image: UIImage?, index: Int) {
         super.init(nibName: nil, bundle: nil)
         imageView.image = image
-        imageView.hero.id = heroId
-        
+        imageView.hero.id = HeroId.image(at: index)
+        titleLabel.text = "snakagam"
+        titleLabel.hero.id = HeroId.title(at: index)
         hero.isEnabled = true
     }
     
@@ -36,7 +53,11 @@ final class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.title = "Detail"
-        view.addSubview(imageView)
-        imageView.autoPinEdgesToSuperviewEdges()
+        view.addSubview(stackView)
+        stackView.autoPinEdgesToSuperviewEdges()
+        stackView.addArrangedSubview(imageView)
+        stackView.addArrangedSubview(titleLabel)
+        
+        titleLabel.autoSetDimension(.height, toSize: 20)
     }
 }

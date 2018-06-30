@@ -10,6 +10,15 @@ import UIKit
 import Hero
 
 final class ListCell: UICollectionViewCell {
+    private lazy var stackView: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.distribution = .fill
+        stackView.alignment = .fill
+        stackView.spacing = 0
+        return stackView
+    }()
+    
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
@@ -20,14 +29,31 @@ final class ListCell: UICollectionViewCell {
         return imageView
     }()
     
-    func configure(image: UIImage?, heroId: String) {
+    private lazy var titleLabel: UILabel = {
+        let label = UILabel()
+        label.textAlignment = .center
+        label.backgroundColor = .white
+        return label
+    }()
+    
+    func configure(image: UIImage?, index: Int) {
+        addSubview(stackView)
+        stackView.autoPinEdgesToSuperviewEdges()
+        
+        stackView.addArrangedSubview(imageView)
+        stackView.addArrangedSubview(titleLabel)
+        
+        titleLabel.autoSetDimension(.height, toSize: 20)
+        
+        titleLabel.text = "snakagam"
+        titleLabel.hero.id = HeroId.title(at: index)
         imageView.image = image
-        imageView.hero.id = heroId
-        setup()
+        imageView.hero.id = HeroId.image(at: index)
+//        setup()
     }
     
-    private func setup() {
-        backgroundView = imageView
-        backgroundColor = .clear
-    }
+//    private func setup() {
+//        backgroundView = imageView
+//        backgroundColor = .clear
+//    }
 }
