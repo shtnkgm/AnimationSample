@@ -25,7 +25,6 @@ final class ListCell: UICollectionViewCell {
         imageView.isUserInteractionEnabled = false
         imageView.clipsToBounds = true
         imageView.backgroundColor = .white
-        // imageView.hero.modifiers = [.useNoSnapshot, .spring(stiffness: 250, damping: 25)]
         return imageView
     }()
     
@@ -45,15 +44,9 @@ final class ListCell: UICollectionViewCell {
         
         titleLabel.autoSetDimension(.height, toSize: 20)
         
-        titleLabel.text = "snakagam"
+        titleLabel.text = "item\(index)"
         titleLabel.hero.id = HeroId.title(at: index)
         imageView.image = image
         imageView.hero.id = HeroId.image(at: index)
-//        setup()
     }
-    
-//    private func setup() {
-//        backgroundView = imageView
-//        backgroundColor = .clear
-//    }
 }

@@ -40,7 +40,7 @@ final class DetailViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
         imageView.image = image
         imageView.hero.id = HeroId.image(at: index)
-        titleLabel.text = "snakagam"
+        titleLabel.text = "item\(index)"
         titleLabel.hero.id = HeroId.title(at: index)
         hero.isEnabled = true
     }
